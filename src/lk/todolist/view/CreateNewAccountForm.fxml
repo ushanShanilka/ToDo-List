@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="552.0" prefWidth="796.0" style="-fx-background-color: #00b894; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.todolist.controller.CreateNewAccountFormController">
+   <children>
+      <Label layoutX="184.0" layoutY="4.0" prefHeight="71.0" prefWidth="357.0" text="Create New Account" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New Bold" size="33.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="228.0" layoutY="76.0" prefHeight="436.0" prefWidth="341.0" style="-fx-border-color: white;">
+         <children>
+            <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="124.0" prefHeight="25.0" prefWidth="238.0" promptText="User Name" unFocusColor="BLACK">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="176.0" prefHeight="25.0" prefWidth="238.0" promptText="E-Mail" unFocusColor="BLACK">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtNewPassword" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="227.0" prefHeight="25.0" prefWidth="238.0" promptText="New Password" unFocusColor="BLACK">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="txtConfirmPassword" focusColor="WHITE" labelFloat="true" layoutX="52.0" layoutY="284.0" onAction="#txtConfirmPasswordOnAction" prefHeight="25.0" prefWidth="238.0" promptText="Confirm Password" unFocusColor="BLACK">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnRegister" layoutX="102.0" layoutY="344.0" onAction="#btnRegisterOnAction" prefHeight="47.0" prefWidth="138.0" style="-fx-border-color: black;" text="Register">
+               <font>
+                  <Font name="Courier New Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <ColorInput />
+               </effect>
+            </JFXButton>
+            <Label layoutX="105.0" layoutY="405.0" onMouseClicked="#lblHaveAccOnAction" prefHeight="17.0" prefWidth="138.0" text="Already have an account?" underline="true">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserID" editable="false" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="52.0" layoutY="72.0" prefHeight="25.0" prefWidth="238.0" promptText="User ID" unFocusColor="BLACK">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnAddNewUser" buttonType="RAISED" layoutX="220.0" layoutY="7.0" onAction="#btnAddNewUserOnAction" prefHeight="38.0" prefWidth="114.0" style="-fx-border-color: blue;" text="+ Add New User">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Candara Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="347.0" layoutY="521.0" opacity="0.7" prefHeight="17.0" prefWidth="103.0" text="© Copyright 2021" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

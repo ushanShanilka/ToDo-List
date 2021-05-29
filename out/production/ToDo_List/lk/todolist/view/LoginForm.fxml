@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="552.0" prefWidth="796.0" style="-fx-background-color: #00b894; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.todolist.controller.LoginFormController">
+   <children>
+      <Label layoutX="298.0" layoutY="32.0" prefHeight="94.0" prefWidth="202.0" text="Login Form" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="513.0" opacity="0.7" prefHeight="17.0" prefWidth="103.0" text="© Copyright 2021" />
+      <AnchorPane layoutX="261.0" layoutY="128.0" prefHeight="307.0" prefWidth="274.0" style="-fx-border-color: white;">
+         <children>
+            <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="26.0" layoutY="30.0" prefHeight="25.0" prefWidth="223.0" promptText="        User Name">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" layoutX="26.0" layoutY="93.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="223.0" promptText="        Password">
+               <font>
+                  <Font name="Courier New Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" layoutX="68.0" layoutY="180.0" onAction="#btnLogin" prefHeight="47.0" prefWidth="138.0" style="-fx-border-color: black;" text="Loging">
+               <font>
+                  <Font name="Courier New Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <ColorInput />
+               </effect>
+            </JFXButton>
+            <Label layoutX="80.0" layoutY="268.0" onMouseClicked="#lblCreateNewAccOnAction" prefHeight="25.0" prefWidth="115.0" text="Create New Account" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Microsoft Himalaya" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="730.0" layoutY="14.0" onAction="#btnSettionOnAction" text="Setting" />
+   </children>
+</AnchorPane>

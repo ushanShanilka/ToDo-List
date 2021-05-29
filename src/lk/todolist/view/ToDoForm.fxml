@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="552.0" prefWidth="796.0" style="-fx-background-color: #00b894; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.todolist.controller.ToDoFormController">
+   <children>
+      <JFXTextField fx:id="txtExecuteToDos" focusColor="WHITE" layoutX="417.0" layoutY="66.0" prefHeight="25.0" prefWidth="343.0" unFocusColor="BLACK" />
+      <ListView fx:id="lstToDos" layoutX="19.0" layoutY="22.0" prefHeight="506.0" prefWidth="359.0" style="-fx-border-color: black;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ListView>
+      <JFXButton fx:id="btnUpdate" layoutX="686.0" layoutY="117.0" onAction="#btnUpdateOnAction" style="-fx-border-color: black;" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="601.0" layoutY="117.0" onAction="#btnDeleteOnAction" style="-fx-border-color: black;" text="Delete" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="394.0" layoutY="168.0" prefHeight="3.0" prefWidth="388.0" />
+      <JFXButton fx:id="btnAddNewToDo" layoutX="403.0" layoutY="190.0" onAction="#btnAddNewToDoOnAction" prefHeight="40.0" prefWidth="149.0" style="-fx-border-color: black;" text="+ Add New ToDo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" layoutX="403.0" layoutY="483.0" onAction="#btnLogOutOnAction" style="-fx-border-color: black;" text="&lt;&lt; Log out">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane fx:id="paneAddToDo" layoutX="402.0" layoutY="262.0" prefHeight="153.0" prefWidth="373.0" style="-fx-border-color: black;">
+         <children>
+            <JFXTextField fx:id="txtNewToDo" focusColor="WHITE" layoutX="15.0" layoutY="28.0" prefHeight="25.0" prefWidth="343.0" unFocusColor="BLACK" />
+            <JFXButton fx:id="btnAddToList" layoutX="263.0" layoutY="67.0" onAction="#btnAddToListOnAction" style="-fx-border-color: black;" text="Add To List">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="71.0" fitWidth="81.0" layoutX="703.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../assests/todo_list_60px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTitle" layoutX="402.0" layoutY="14.0" prefHeight="33.0" prefWidth="285.0" text="Hi Kamal Welcome To-Do List">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserId" layoutX="698.0" layoutY="14.0" prefHeight="33.0" prefWidth="84.0" text="      U001">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="530.0" opacity="0.7" prefHeight="17.0" prefWidth="103.0" text="© Copyright 2021" />
+   </children>
+</AnchorPane>

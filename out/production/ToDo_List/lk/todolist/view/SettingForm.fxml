@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.todolist.controller.SettingFormController">
+   <children>
+      <JFXRadioButton fx:id="rtbBlack" layoutX="238.0" layoutY="122.0" onAction="#rtbBlackOnAction" text="Black" />
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#btnbackOnAction" text="Button" />
+   </children>
+</AnchorPane>
